@@ -57,8 +57,10 @@ sudo airodump-ng wlan0
 - You’ll see BSSID, channel, signal strength, and more.  
 - Choose **your own network** for the demonstration.
 
-<img src="https://imgur.com/hdC77iR" height="80%" width="80%" alt="Attack Time"/>
+<img src="https://imgur.com/hdC77iR.png" height="80%" width="80%" alt="Attack Time"/>
 
+<br />
+<br />
 ---
 
 ### ✅ Step 4: Launch Deauthentication Attack  
@@ -70,6 +72,9 @@ sudo aireplay-ng --deauth 50 -a [Target_BSSID] wlan0
 - Sends 50 deauthentication packets to disconnect connected devices  
 
 <img src="https://imgur.com/MAYFtk7.png" height="80%" width="80%" alt="Attack Time"/>
+\
+<br />
+<br />
 
 ---
 
